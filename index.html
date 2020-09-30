@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var paragraph = 1;
+function myFunction() {
+  paragraph += 1;
+  if (paragraph === 2){
+    document.getElementById("demo").innerHTML = "Don't you dare press it again.";
+  } else if (paragraph === 3) {
+    document.getElementById("demo").innerHTML = "Please listen!"
+  } else if (paragraph === 4) {
+    document.getElementById("demo").innerHTML = "Next time no more button"
+  } else
+  document.getElementById("demo").style.display = "none"
+}
+</script>
+</head>
+<body>
+
+<button id="demo" type="button" onclick="myFunction()">Do Not Press This Button</button>
+
+</body>
+</html>
